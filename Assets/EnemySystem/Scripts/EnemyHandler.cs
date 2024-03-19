@@ -11,16 +11,16 @@ public class EnemyHandler : MonoBehaviour
         Attack
     }
     State state;
-    Enemy enemy;
     public EnemyAttackHandler attackHandler {get; private set;}
     public EnemyMovementHandler movementHandler {get; private set;}
 
     [Header("Detection Settings")]
     [Space(15)]
-    [SerializeField] LayerMask playerLayer;
+    [SerializeField] private LayerMask playerLayer;
+    public LayerMask playerLayerMask { get {return playerLayer;} }
     [SerializeField] private float chaseRange = 8f;
     [SerializeField] private float attackRange = 4f;
-    [SerializeField] private Vector3 attackRangeOffset = Vector3.zero;
+    [SerializeField] public Vector3 attackRangeOffset = Vector3.zero;
     [SerializeField] private float minimumDetectionRadiusAngle = -40f;
     [SerializeField] private float maximumDetectionRadiusAngle = 65f;
 
@@ -30,7 +30,6 @@ public class EnemyHandler : MonoBehaviour
     Vector3 lastSeenPosDraw;
     
     private void Awake() {
-        enemy = GetComponent<Enemy>();
         attackHandler = GetComponent<EnemyAttackHandler>();
         movementHandler = GetComponent<EnemyMovementHandler>();
     }
