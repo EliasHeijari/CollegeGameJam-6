@@ -7,6 +7,7 @@ public class EnemyWeapon : MonoBehaviour
     [SerializeField] private Enemy enemy;
     [SerializeField] private GameObject bloodSprayParicle;
     Vector3 hittedPosition;
+    private GameObject bloodSpray;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -14,10 +15,13 @@ public class EnemyWeapon : MonoBehaviour
         {
             hittedPosition = collision.contacts[0].point;
             player.TakeDamage(enemy.damage);
-            Quaternion bloodSprayRotation = Quaternion.LookRotation(collision.contacts[0].normal, Vector3.up);
-            GameObject bloodSpray = Instantiate(bloodSprayParicle, hittedPosition, bloodSprayRotation);
-            bloodSpray.transform.parent = player.transform;
-            Destroy(bloodSpray, 25f);
+            if (bloodSpray == null)
+            {
+                Quaternion bloodSprayRotation = Quaternion.LookRotation(collision.contacts[0].normal, Vector3.up);
+                bloodSpray = Instantiate(bloodSprayParicle, hittedPosition, bloodSprayRotation);
+                bloodSpray.transform.parent = player.transform;
+                Destroy(bloodSpray, 25f);
+            }
         }
     }
 
