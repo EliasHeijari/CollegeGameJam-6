@@ -93,7 +93,7 @@ namespace EvolveGames
             if (isRunning) RunningValue = Mathf.Lerp(RunningValue, runningSpeed, timeToRunning * Time.deltaTime);
             else RunningValue = WalkingValue;
             float movementDirectionY = moveDirection.y;
-            Debug.Log(isRunning);
+
             if (isRunning && !wasRunning)
             {
                 sprintingMeter -= Time.deltaTime;
