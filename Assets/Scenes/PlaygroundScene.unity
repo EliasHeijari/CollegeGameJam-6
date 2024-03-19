@@ -1129,11 +1129,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3691299243577344567, guid: a01c7516e659bdf4b9897ab54df69b69,
-        type: 3}
-      propertyPath: m_RenderPostProcessing
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4582019824381016672, guid: a01c7516e659bdf4b9897ab54df69b69,
         type: 3}
       propertyPath: sprintBar
@@ -1199,12 +1194,6 @@ PrefabInstance:
       propertyPath: globalVolume
       value: 
       objectReference: {fileID: 303333574}
-    - target: {fileID: 4897512784451286337, guid: a01c7516e659bdf4b9897ab54df69b69,
-        type: 3}
-      propertyPath: hitEffectVolumeProfile
-      value: 
-      objectReference: {fileID: 11400000, guid: 74869347146625a4f8bccb47b4802619,
-        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -136,7 +136,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -233,6 +233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 621e0a5abcff11a4293eb24abd173ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitEffectVolumeProfile: {fileID: 11400000, guid: 74869347146625a4f8bccb47b4802619,
+    type: 2}
+  globalVolume: {fileID: 0}
 --- !u!114 &4582019824381016672
 MonoBehaviour:
   m_ObjectHideFlags: 0
