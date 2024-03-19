@@ -1330,6 +1330,21 @@ PrefabInstance:
       propertyPath: chaseAudioTimerMin
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6774399148036099792, guid: f98da845afc46504c9236dc2a33c1c3a,
+        type: 3}
+      propertyPath: attackParamTriggers.Array.data[0]
+      value: Attack0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774399148036099792, guid: f98da845afc46504c9236dc2a33c1c3a,
+        type: 3}
+      propertyPath: attackParamTriggers.Array.data[1]
+      value: Attack1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774399148036099792, guid: f98da845afc46504c9236dc2a33c1c3a,
+        type: 3}
+      propertyPath: attackParamTriggers.Array.data[2]
+      value: Attack2
+      objectReference: {fileID: 0}
     - target: {fileID: 8554470508120669332, guid: f98da845afc46504c9236dc2a33c1c3a,
         type: 3}
       propertyPath: m_Name

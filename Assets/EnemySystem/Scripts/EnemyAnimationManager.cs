@@ -8,7 +8,8 @@ public class EnemyAnimationManager : MonoBehaviour
     [SerializeField] private EnemyHandler enemyHandler;
 
     private const string SPEED_PARAM = "Speed";
-    private const string ATTACK_PARAM = "Attack";
+
+    [SerializeField] private string[] attackParamTriggers = new string[3];
 
     private void Start() {
         enemyHandler.attackHandler.OnAttack += AttackHandler_OnAttack;
@@ -16,7 +17,9 @@ public class EnemyAnimationManager : MonoBehaviour
 
     private void AttackHandler_OnAttack(object sender, System.EventArgs e)
     {
-        animator.SetTrigger(ATTACK_PARAM);
+        int triggerIndex = Random.Range(0, attackParamTriggers.Length);
+
+        animator.SetTrigger(attackParamTriggers[triggerIndex]);
     }
 
     private void Update()
