@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 4582019824381016672}
   - component: {fileID: 522938957062152083}
   - component: {fileID: 6957629690840292680}
+  - component: {fileID: 6094040234655669924}
   m_Layer: 6
   m_Name: PlayerController
   m_TagString: Player
@@ -214,7 +215,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 2.2
-  m_Radius: 0.5
+  m_Radius: 0.3
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.0001
@@ -245,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Camera: {fileID: 4582019822591254235}
-  walkingSpeed: 3
+  walkingSpeed: 2
   CrouchSpeed: 1
   runningSpeed: 5
   jumpSpeed: 6
@@ -253,12 +254,10 @@ MonoBehaviour:
   lookXLimit: 80
   RunningFOV: 70
   SpeedToFOV: 4
-  CrouchHeight: 1
   gravity: 20
   timeToRunning: 2
   canMove: 1
   CanRunning: 1
-  CrouchKey: 306
   characterController: {fileID: 0}
   moveDirection: {x: 0, y: 0, z: 0}
   isRunning: 0
@@ -315,10 +314,22 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.20501146
+  m_Radius: 0.5
   m_Height: 2.104239
   m_Direction: 1
   m_Center: {x: 0, y: 0.056107283, z: 0.04155925}
+--- !u!114 &6094040234655669924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582019824381016673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18bfb939c24a3de40ac27c2685419056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7350963267812571705
 PrefabInstance:
   m_ObjectHideFlags: 0
