@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311921ccc476b234c832ca1b1862750d, type: 3}
+  m_Name: EnemyAudioClips
+  m_EditorClassIdentifier: 
+  enemyChaseClips:
+  - {fileID: 8300000, guid: 81699aec922108a479b4848c4678a0e7, type: 3}
+  - {fileID: 8300000, guid: d6030157ccdec3b46bbc66054e7fe453, type: 3}
+  - {fileID: 8300000, guid: 039ab0315ac60bb47b87c9d9d20706e9, type: 3}
+  enemyAttackClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  enemyPatrolClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

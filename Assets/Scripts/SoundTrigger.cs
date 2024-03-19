@@ -15,16 +15,15 @@ public class SoundTrigger : MonoBehaviour
         if (other.TryGetComponent(out Player player) && !hasPlayed)
         {
             AudioSource.PlayClipAtPoint(soundClip, soundTransform.position);
-            Debug.Log("Sound played");
             hasPlayed = true;
             if (!doOnce) hasPlayed = false;
         }
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.white;
 
-        Gizmos.DrawCube(soundTransform.position, Vector3.one);
+        Gizmos.DrawIcon(soundTransform.position, "SpeakerIcon", true);
     }
 }

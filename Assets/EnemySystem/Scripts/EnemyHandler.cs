@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class EnemyHandler : MonoBehaviour
 {
-    private enum State{
+    public enum State{
         Patrol,
         Chase,
         Attack
     }
     State state;
+    public State enemyState { get { return state; } }
     public EnemyAttackHandler attackHandler {get; private set;}
     public EnemyMovementHandler movementHandler {get; private set;}
 
