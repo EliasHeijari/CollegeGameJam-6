@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace EvolveGames
 {
@@ -46,7 +48,17 @@ namespace EvolveGames
         [HideInInspector] public float Lookhorizontal;
         float RunningValue;
         [HideInInspector] public float WalkingValue;
-        private bool isGrounded = false;
+
+        public event EventHandler OnJump;
+        public bool isGrounded { get; private set; } = false;
+        public bool IsWalking { get; private set; }
+        public bool IsRunning { get; private set; }
+
+        [Header("Sprinting")]
+        [SerializeField] private Image sprintBar;
+        private float sprintingMeterMax = 6f;
+        private float sprintingMeter;
+        bool wasRunning;
 
         void Start()
         {
@@ -73,20 +85,43 @@ namespace EvolveGames
             }
             Vector3 forward = transform.TransformDirection(Vector3.forward);
             Vector3 right = transform.TransformDirection(Vector3.right);
-            isRunning = !isCrouch ? CanRunning ? Input.GetKey(KeyCode.LeftShift) : false : false;
+            if (sprintingMeter > 0f && !wasRunning)
+                isRunning = !isCrouch ? CanRunning ? Input.GetKey(KeyCode.LeftShift) : false : false;
+            else isRunning = false;
             vertical = canMove ? (isRunning ? RunningValue : WalkingValue) * Input.GetAxis("Vertical") : 0;
             horizontal = canMove ? (isRunning ? RunningValue : WalkingValue) * Input.GetAxis("Horizontal") : 0;
             if (isRunning) RunningValue = Mathf.Lerp(RunningValue, runningSpeed, timeToRunning * Time.deltaTime);
             else RunningValue = WalkingValue;
             float movementDirectionY = moveDirection.y;
 
+            if (isRunning && !wasRunning)
+            {
+                sprintingMeter -= Time.deltaTime;
+                if (sprintingMeter <= 0)
+                {
+                    wasRunning = true;
+                }
+            }
+            else
+            {
+                sprintingMeter += Time.deltaTime;
+                if (sprintingMeter > 2f && wasRunning) wasRunning = false;
+                if (sprintingMeter >= sprintingMeterMax) sprintingMeter = sprintingMeterMax;
+            }
+
+            sprintBar.fillAmount = sprintingMeter / sprintingMeterMax;
+
             // Modify the movement calculation to ensure it's normalized
             Vector3 desiredMove = (forward * vertical) + (right * horizontal);
             desiredMove = Vector3.ClampMagnitude(desiredMove, 1.0f); // Normalize the desired movement vector
             moveDirection = desiredMove * (isRunning ? RunningValue : WalkingValue);
 
+            IsWalking = Mathf.Abs(moveDirection.x) > 0.15f && !isRunning || Mathf.Abs(moveDirection.z) > 0.15f && !isRunning;
+            IsRunning = isRunning && moveDirection.magnitude > 0.15f;
+
             if (Input.GetButton("Jump") && canMove && isGrounded)
             {
+                OnJump?.Invoke(this, EventArgs.Empty);
                 moveDirection.y = jumpSpeed;
             }
             else
