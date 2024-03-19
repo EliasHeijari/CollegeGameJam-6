@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eabda559814d30d45a5e245bcd637aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enabled: 1
+  Enabled: 0
   Amount: 0.01
   Frequency: 13
   Smooth: 44.7
@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 4897512784451286337}
   - component: {fileID: 4582019824381016672}
   - component: {fileID: 522938957062152083}
+  - component: {fileID: 6957629690840292680}
   m_Layer: 6
   m_Name: PlayerController
   m_TagString: Player
@@ -295,6 +296,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!136 &6957629690840292680
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582019824381016673}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.20501146
+  m_Height: 2.104239
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.056107283, z: 0.04155925}
 --- !u!1001 &7350963267812571705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -363,6 +387,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 57153d28d049ead4a947dcef5c3b732d, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 1c791aebd5f648844803cc3504deb592,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

@@ -24,6 +24,8 @@ public class EnemyHandler : MonoBehaviour
     [SerializeField] private float minimumDetectionRadiusAngle = -40f;
     [SerializeField] private float maximumDetectionRadiusAngle = 65f;
 
+    public event EventHandler OnChaseStart;
+
     Vector3 playerLastSeenPos;
 
     // For Drawing Gizmos
@@ -55,6 +57,7 @@ public class EnemyHandler : MonoBehaviour
     {
         if (PlayerOnChaseRange() && IsPlayerOnSight())
         {
+            if (state == State.Patrol) { OnChaseStart?.Invoke(this, EventArgs.Empty); }
             state = State.Chase;
             if (PlayerOnAttackRange())
             {
