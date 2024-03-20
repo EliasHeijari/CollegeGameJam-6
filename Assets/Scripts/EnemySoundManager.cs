@@ -14,7 +14,9 @@ public class EnemySoundManager : MonoBehaviour
     [SerializeField] float chaseAudioTimerMin = 3f;
     [SerializeField] float chaseAudioTimerMax = 8f;
     float chaseAudioTimer;
+    float attackAudioTimer;
     AudioClip oldAudioClip;
+
 
     private void Start()
     {
@@ -31,11 +33,30 @@ public class EnemySoundManager : MonoBehaviour
             case EnemyHandler.State.Chase:
                 UpdateChaseAudio();
                 break;
+            case EnemyHandler.State.Attack:
+                UpdateAttackAudio();
+                break;
+        }
+    }
+
+    private void UpdateAttackAudio()
+    {
+        attackAudioTimer -= Time.deltaTime;
+        if (attackAudioTimer < 0)
+        {
+            attackAudioTimer = Random.Range(3, 6);
+            int enemyRandomattackClipsIndex = Random.Range(0, enemyAudioClips.enemyAttackClips.Length);
+
+            AudioClip audioAttackClip = enemyAudioClips.enemyAttackClips[enemyRandomattackClipsIndex];
+
+            enemyAudioSource.clip = audioAttackClip;
+            enemyAudioSource.Play();
         }
     }
 
     private void UpdateChaseAudio()
     {
+
         chaseAudioTimer -= Time.deltaTime;
         if (chaseAudioTimer < 0)
         {
@@ -50,7 +71,6 @@ public class EnemySoundManager : MonoBehaviour
 
                 audioChaseClip = enemyAudioClips.enemyChaseClips[enemyRandomChaseClipsIndex];
             }
-
             enemyAudioSource.clip = audioChaseClip;
             enemyAudioSource.Play();
 
