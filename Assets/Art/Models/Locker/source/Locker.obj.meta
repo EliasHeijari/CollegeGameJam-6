@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: f5945b53bc122df4c8a713f91c29b2c2
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Locker_polySurface4polySurface1pCube1group1_group1Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCube10Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCube11Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCube2Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCube3Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCube4Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCube5Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCube6Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCube7Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCube8Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCube9Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCylinder1Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCylinder2Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCylinder3Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1pCylinder4Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1polySurface8polySurface10Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1polySurface8polySurface11Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1polySurface8polySurface12Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1polySurface8polySurface13Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1polySurface8polySurface14Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1polySurface8polySurface15Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1polySurface8polySurface16Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1polySurface8polySurface17Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_group1polySurface9polySurface8Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_Locker_pCube1group1polySurface3Mat
+    second: {fileID: 2100000, guid: 4a2fd1daa062b4248912fb6d791ecdb5, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
