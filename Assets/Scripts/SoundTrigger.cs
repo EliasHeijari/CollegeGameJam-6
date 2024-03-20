@@ -5,16 +5,18 @@ using UnityEngine;
 public class SoundTrigger : MonoBehaviour
 {
     [SerializeField] private Transform soundTransform;
-    [SerializeField] private AudioClip soundClip;
+    [SerializeField] private List<AudioClip> soundClips = new List<AudioClip>();
     [SerializeField] private bool doOnce = true;
 
     bool hasPlayed = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out Player player) && !hasPlayed)
+        if (other.TryGetComponent(out Player player) && !hasPlayed && soundClips.Count > 0)
         {
-            AudioSource.PlayClipAtPoint(soundClip, soundTransform.position);
+            int randomIndex = Random.Range(0, soundClips.Count);
+            AudioClip randomClip = soundClips[randomIndex];
+            AudioSource.PlayClipAtPoint(randomClip, soundTransform.position);
             hasPlayed = true;
             if (!doOnce) hasPlayed = false;
         }
@@ -23,7 +25,6 @@ public class SoundTrigger : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.white;
-
         Gizmos.DrawIcon(soundTransform.position, "SpeakerIcon", true);
     }
 }
