@@ -3,22 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour, IDamageable
 {
-    private int health = 100;
+    [SerializeField] private int maxHealth = 100;
+    private int health;
+    public bool hasMasterKey { get; set; } = false;
     [SerializeField] private VolumeProfile hitEffectVolumeProfile;
     [SerializeField] private Volume globalVolume;
+    [SerializeField] private Image healthBar;
     private VolumeProfile oldVolumeProfile;
 
     private void Start()
     {
+        health = maxHealth;
         oldVolumeProfile = globalVolume.profile;
+
+        healthBar.fillAmount = (float)health / maxHealth;
     }
 
     public void TakeDamage(int damage)
     {
         health -= damage;
+        healthBar.fillAmount = (float)health / maxHealth;
         StartCoroutine(HitEffectVolume());
         if (health <= 0)
         {

@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class DoorInteractable : MonoBehaviour, IInteractable
 {
+    private Animator animator;
+    string interactText = "Open/Close";
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     public string GetInteractText()
     {
-        return "Open Door";
+        return interactText;
     }
 
     public Transform GetTransform()
@@ -16,6 +24,13 @@ public class DoorInteractable : MonoBehaviour, IInteractable
 
     public void Interact(Transform interactorTransform)
     {
-        Debug.Log("You Opened " + gameObject.GetType().Name);
+        if (interactorTransform.GetComponent<Player>().hasMasterKey)
+        {
+            animator.SetTrigger("OpenClose");
+        }
+        else
+        {
+            interactText = "You Need The Master Key";
+        }
     }
 }
