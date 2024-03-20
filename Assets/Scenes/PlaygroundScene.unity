@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1733,6 +1733,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6579696783024336274, guid: f98da845afc46504c9236dc2a33c1c3a,
+        type: 3}
+      propertyPath: EnemyChaseStartsClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 40f1fbe0512b40340b5b7df0fa2d035d, type: 3}
     - target: {fileID: 8554470508120669332, guid: f98da845afc46504c9236dc2a33c1c3a,
         type: 3}
       propertyPath: m_Name

@@ -49,6 +49,11 @@ PrefabInstance:
       propertyPath: chaseAudioTimerMin
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4388200815849253896, guid: f0c113e15bd83444eaa96fa1ff2d8834,
+        type: 3}
+      propertyPath: EnemyChaseStartsClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 40f1fbe0512b40340b5b7df0fa2d035d, type: 3}
     - target: {fileID: 5499037931912125682, guid: f0c113e15bd83444eaa96fa1ff2d8834,
         type: 3}
       propertyPath: m_LocalPosition.x

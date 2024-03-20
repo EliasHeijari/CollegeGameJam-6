@@ -17,10 +17,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d6030157ccdec3b46bbc66054e7fe453, type: 3}
   - {fileID: 8300000, guid: 039ab0315ac60bb47b87c9d9d20706e9, type: 3}
   enemyAttackClips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 1f2dba10b086b5846ba8e12e1ba80b2b, type: 3}
+  - {fileID: 8300000, guid: 92554f33ecde3f14c8392d54f5602a0a, type: 3}
+  - {fileID: 8300000, guid: a737bc80d82d5d54e8d9aea2aead2e2d, type: 3}
   enemyPatrolClips:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 2233eced9c4045744851f8f9c3f35d60, type: 3}
+  - {fileID: 8300000, guid: 449e7931153e1e9489eb4d1fa62f1975, type: 3}
   - {fileID: 0}
