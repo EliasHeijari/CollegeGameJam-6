@@ -69,7 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doOnce: 1
   jumpScareObject: {fileID: 2913040067076407273}
-  jumpScareSound: {fileID: 8300000, guid: 92554f33ecde3f14c8392d54f5602a0a, type: 3}
+  jumpScareSound: {fileID: 8300000, guid: 9f3e8fb03cf94bd4886cb980d855029d, type: 3}
   globalVolume: {fileID: 0}
   darkProfile: {fileID: 11400000, guid: d109b55dc930f734ab52cce77ab2b2a4, type: 2}
 --- !u!1001 &5348779887223257730
