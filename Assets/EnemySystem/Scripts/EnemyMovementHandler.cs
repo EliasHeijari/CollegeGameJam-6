@@ -24,6 +24,7 @@ public class EnemyMovementHandler : MonoBehaviour
         enemy = GetComponent<Enemy>();
         navMeshAgent = enemy.navMeshAgent;
         patrolPoints = enemy.PatrolPoints;
+        targetPos = patrolPoints[UnityEngine.Random.Range(0, patrolPoints.Length)];
     }
 
     public void Chase(Transform target)
@@ -45,7 +46,6 @@ public class EnemyMovementHandler : MonoBehaviour
         if (isMovingTo) return;
 
         navMeshAgent.speed = walkingSpeed;
-
         if (Vector3.Distance(transform.position, targetPos) > 1f)
         {
             navMeshAgent.SetDestination(targetPos);
