@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3154684044846348659}
   - component: {fileID: 5894415411046341826}
   - component: {fileID: 600047196080605414}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1_Locker:group1pCube8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4310966471651834755}
   - component: {fileID: 231399121514811233}
   - component: {fileID: 4703561613599564501}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LockerPartDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 9107894982217598138}
   - component: {fileID: 8498721119115487171}
   - component: {fileID: 3943703162024958488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Locker:polySurface4polySurface1pCube1group1_group1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 2653293025243889694}
   - component: {fileID: 241268132485084577}
   - component: {fileID: 2566797989487465137}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1_Locker:group1pCylinder3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 6296204289751168806}
   - component: {fileID: 558309172055289401}
   - component: {fileID: 3486389993351280023}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LockerPartDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 3084234161907912636}
   - component: {fileID: 3847422293798014866}
   - component: {fileID: 177824090123792927}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Locker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 9149674079836073853}
   - component: {fileID: 1819644514179864864}
   - component: {fileID: 6492125196566230209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1_Locker:group1pCube6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +655,7 @@ GameObject:
   - component: {fileID: 3077836503084750101}
   - component: {fileID: 1217466105380248499}
   - component: {fileID: 7976498630458075008}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1_Locker:group1pCube7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -738,7 +738,7 @@ GameObject:
   - component: {fileID: 9072868554377446978}
   - component: {fileID: 466329859859590736}
   - component: {fileID: 6532295710253315478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LockerPartDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -821,7 +821,7 @@ GameObject:
   - component: {fileID: 141290339506049144}
   - component: {fileID: 4675817818566657437}
   - component: {fileID: 6986976350173676942}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LockerPartDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -904,7 +904,7 @@ GameObject:
   - component: {fileID: 3208968794640527216}
   - component: {fileID: 5619001887269073248}
   - component: {fileID: 8245174219168888918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1_Locker:group1pCube10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -988,7 +988,7 @@ GameObject:
   - component: {fileID: 6080806934937210561}
   - component: {fileID: 4774548113313394507}
   - component: {fileID: 3444743575497797433}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Locker:Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1093,7 +1093,7 @@ GameObject:
   - component: {fileID: 73944658437815289}
   - component: {fileID: 926064379280952013}
   - component: {fileID: 5350036433605962119}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LockerPartDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1176,7 +1176,7 @@ GameObject:
   - component: {fileID: 5344171167976224618}
   - component: {fileID: 7169346727473521349}
   - component: {fileID: 4243474294066010482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1_Locker:group1pCube5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1259,7 +1259,7 @@ GameObject:
   - component: {fileID: 151775379003137585}
   - component: {fileID: 4697469714639314919}
   - component: {fileID: 8020061605737619463}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LockerPartDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1342,7 +1342,7 @@ GameObject:
   - component: {fileID: 3007594117028500150}
   - component: {fileID: 9165163071152165929}
   - component: {fileID: 5586311937736205944}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1_Locker:group1pCylinder4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1425,7 +1425,7 @@ GameObject:
   - component: {fileID: 4591185753746145985}
   - component: {fileID: 6939119246800443449}
   - component: {fileID: 1834371389351309162}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LockerPartDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1508,7 +1508,7 @@ GameObject:
   - component: {fileID: 157512070532646139}
   - component: {fileID: 1631385161129669396}
   - component: {fileID: 7127056736675507309}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LockerPartDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1591,7 +1591,7 @@ GameObject:
   - component: {fileID: 1532464743874276726}
   - component: {fileID: 6925427003037582122}
   - component: {fileID: 523259150441571567}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1_Locker:group1pCube4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1674,7 +1674,7 @@ GameObject:
   - component: {fileID: 6383854833731058792}
   - component: {fileID: 2950764854753882432}
   - component: {fileID: 9213905954846408009}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1_Locker:group1pCube9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1755,7 +1755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1004228423584490001}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LockerDoorHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1797,7 +1797,7 @@ GameObject:
   - component: {fileID: 581267200229481900}
   - component: {fileID: 2005733607214157293}
   - component: {fileID: 4907248539508496222}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1_Locker:group1pCube11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1880,7 +1880,7 @@ GameObject:
   - component: {fileID: 4242182081423355616}
   - component: {fileID: 1515653436313979307}
   - component: {fileID: 7068049464728436742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1_Locker:group1pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1963,7 +1963,7 @@ GameObject:
   - component: {fileID: 1619751195359565514}
   - component: {fileID: 8294105408255443748}
   - component: {fileID: 9085937586644150422}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1_Locker:group1pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

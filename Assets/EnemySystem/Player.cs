@@ -14,6 +14,7 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField] private Volume globalVolume;
     [SerializeField] private Image healthBar;
     private VolumeProfile oldVolumeProfile;
+    [SerializeField] private GameObject dyingCanvas;
 
     private void Start()
     {
@@ -44,7 +45,13 @@ public class Player : MonoBehaviour, IDamageable
 
     private void Die()
     {
-        // Dying logic here
-        Debug.Log("Player Died");
+        LoadCurrentSceneAfterTime(2f);
+    }
+
+    IEnumerator LoadCurrentSceneAfterTime(float time)
+    {
+        dyingCanvas.SetActive(true);
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
