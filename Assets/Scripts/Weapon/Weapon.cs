@@ -21,9 +21,6 @@ public class Weapon : MonoBehaviour, IInteractable
         get{
             return shootingPoint;
         }
-        private set{
-            shootingPoint = value;
-        }
     }
     [SerializeField] private WeaponData weaponData;
     public WeaponData Data

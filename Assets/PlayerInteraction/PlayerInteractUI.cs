@@ -8,21 +8,35 @@ public class PlayerInteractUI : MonoBehaviour {
     [SerializeField] private PlayerInteract playerInteract;
     [SerializeField] private TextMeshProUGUI interactTextMeshProUGUI;
 
-    private void Update() {
-        if (playerInteract.GetInteractableObject() != null) {
+    private void Update()
+    {
+        if (playerInteract.GetInteractableObject() != null)
+        {
             Show(playerInteract.GetInteractableObject());
-        } else {
+
+            // If interactable object is the same weapon as the one player is holding, dont show Interact text
+            if (playerInteract.GetInteractableObject().GetTransform().TryGetComponent(out Weapon weapon))
+            {
+                if (weapon == playerInteract.GetComponent<WeaponHandling>().Weapon)
+                    Hide();
+            }
+        }
+        else
+        {
             Hide();
         }
     }
 
-    private void Show(IInteractable interactable) {
+    private void Show(IInteractable interactable)
+    {
         containerGameObject.SetActive(true);
         interactTextMeshProUGUI.text = interactable.GetInteractText();
     }
 
-    private void Hide() {
+    private void Hide()
+    {
         containerGameObject.SetActive(false);
     }
+
 
 }

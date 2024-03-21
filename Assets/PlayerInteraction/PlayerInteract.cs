@@ -26,6 +26,10 @@ public class PlayerInteract : MonoBehaviour {
 
         IInteractable closestInteractable = null;
         foreach (IInteractable interactable in interactableList) {
+
+            if (interactable.GetTransform().GetComponent<Weapon>() != null)
+                if (GetComponent<WeaponHandling>().HasWeapon) continue;
+
             if (closestInteractable == null) {
                 closestInteractable = interactable;
             } else {
