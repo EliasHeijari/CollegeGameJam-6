@@ -32,7 +32,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8693392269150462927}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &959786197035428676
@@ -121,3 +122,108 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &1641873846306176748
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3310653567166922453}
+    m_Modifications:
+    - target: {fileID: 7289050748840707993, guid: e643dd6f5c9009c49afc29384b63e68b,
+        type: 3}
+      propertyPath: m_Name
+      value: Glock40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956798026260045091, guid: e643dd6f5c9009c49afc29384b63e68b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956798026260045091, guid: e643dd6f5c9009c49afc29384b63e68b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956798026260045091, guid: e643dd6f5c9009c49afc29384b63e68b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956798026260045091, guid: e643dd6f5c9009c49afc29384b63e68b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710695
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956798026260045091, guid: e643dd6f5c9009c49afc29384b63e68b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000119209275
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956798026260045091, guid: e643dd6f5c9009c49afc29384b63e68b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956798026260045091, guid: e643dd6f5c9009c49afc29384b63e68b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000029802319
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956798026260045091, guid: e643dd6f5c9009c49afc29384b63e68b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956798026260045091, guid: e643dd6f5c9009c49afc29384b63e68b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956798026260045091, guid: e643dd6f5c9009c49afc29384b63e68b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7289050748840707993, guid: e643dd6f5c9009c49afc29384b63e68b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7033353582307152639}
+  m_SourcePrefab: {fileID: 100100000, guid: e643dd6f5c9009c49afc29384b63e68b, type: 3}
+--- !u!1 &8353881098121869685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7289050748840707993, guid: e643dd6f5c9009c49afc29384b63e68b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1641873846306176748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7033353582307152639
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8353881098121869685}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aa8ce2b61fab86e4c813ff2d449e58da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &8693392269150462927 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7956798026260045091, guid: e643dd6f5c9009c49afc29384b63e68b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1641873846306176748}
+  m_PrefabAsset: {fileID: 0}
