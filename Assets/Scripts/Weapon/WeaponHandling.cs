@@ -55,7 +55,7 @@ public class WeaponHandling : MonoBehaviour
     }
 
     private void CheckWeaponDrop(){
-        if (Input.GetKey(KeyCode.G) && Time.time >= dropWeaponCooldown && !Weapon.isReloading){
+        if (Input.GetKey(KeyCode.F) && Time.time >= dropWeaponCooldown && !Weapon.isReloading){
             dropWeaponCooldown = Time.time + 1f/weaponThrowRate;
             DropWeapon(); 
         }
