@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyAnimationManager : MonoBehaviour
@@ -13,6 +14,14 @@ public class EnemyAnimationManager : MonoBehaviour
 
     private void Start() {
         enemyHandler.attackHandler.OnAttack += AttackHandler_OnAttack;
+        enemyHandler.GetComponent<Enemy>().OnEnemyDie += EnemyAnimationManager_OnEnemyDie;
+    }
+
+    private void EnemyAnimationManager_OnEnemyDie(object sender, System.EventArgs e)
+    {
+        transform.position -= Vector3.up;
+        animator.SetTrigger("Dying");
+        enemyHandler.GetComponent<Enemy>().OnEnemyDie -= EnemyAnimationManager_OnEnemyDie;
     }
 
     private void AttackHandler_OnAttack(object sender, System.EventArgs e)

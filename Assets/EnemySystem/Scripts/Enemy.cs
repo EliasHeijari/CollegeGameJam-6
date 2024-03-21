@@ -7,9 +7,9 @@ using UnityEngine.EventSystems;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
-    private int health;
+    private int health = 100;
     public int damage { get; private set; } = 25;
-    public static event EventHandler OnEnemyDie;
+    public event EventHandler OnEnemyDie;
     public NavMeshAgent navMeshAgent {get; private set;}
     [SerializeField] private Transform[] patrolPoints;
     public Vector3[] PatrolPoints 
@@ -38,7 +38,8 @@ public class Enemy : MonoBehaviour, IDamageable
     private void Die()
     {
         OnEnemyDie?.Invoke(this, EventArgs.Empty);
-
+        GetComponent<EnemyHandler>().enabled = false;
+        this.enabled = false;
         // Death Logic
         Debug.Log("enemy died");
     }
