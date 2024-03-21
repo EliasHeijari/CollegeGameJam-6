@@ -43,11 +43,15 @@ public class WeaponHandling : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0) && Time.time >= shootingCooldown && Weapon.magSize > 0 && !Weapon.isReloading){
             shootingCooldown = Time.time + 1f/Weapon.Data.fireRate;
             OnShoot?.Invoke(this, EventArgs.Empty);
-            if (WeaponSystem.Instance.Shoot(Camera.main.transform.position, Camera.main.transform.forward,
+
+            if (WeaponSystem.Instance.Shoot(Weapon.ShootingPoint.position, Weapon.ShootingPoint.right,
                 transform.position, Weapon.ShootingPoint.position, Weapon.Data.shootingDistance, ShotImpactForce, out RaycastHit hit))
                 {
                     // TODO: Damage Logic Here, IDamageable.Damage
-                     
+                     if (hit.collider.TryGetComponent(out IDamageable damageable))
+                {
+                    damageable.TakeDamage(10);
+                }
                 }
             
         }

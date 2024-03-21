@@ -28,6 +28,7 @@ public class PlayerAnimationManager : MonoBehaviour
     private string isGoingUp = "GoingUp";
     private string isLanding = "Landing";
     private string isJump = "Jump";
+    private string isAiming = "IsAiming";
 
     State state;
 
@@ -90,6 +91,14 @@ public class PlayerAnimationManager : MonoBehaviour
             case State.landing:
                 animator.SetBool(isLanding, true);
                 break;
+        }
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            animator.SetBool(isAiming, true);
+        }
+        else if (animator.GetBool(isAiming))
+        {
+            animator.SetBool(isAiming, false);
         }
     }
 

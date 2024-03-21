@@ -507,13 +507,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8673210225190740155}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.03764642, y: 0.033037417, z: 0.012571372, w: 0.9986657}
-  m_LocalPosition: {x: 0.33, y: -0.11, z: 0.45883906}
+  m_LocalRotation: {x: -0.51655644, y: 0.31328416, z: 0.4623648, w: 0.64903104}
+  m_LocalPosition: {x: -0.0862, y: 0.213, z: 0.0424}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9202669260869092849}
-  m_LocalEulerAnglesHint: {x: -4.36, y: 3.74, z: 1.3}
+  m_LocalEulerAnglesHint: {x: -73.786, y: -14.733, z: 82.017}
 --- !u!1001 &7350963267812571705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1962,6 +1962,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 57153d28d049ead4a947dcef5c3b732d, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 1c791aebd5f648844803cc3504deb592,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 1c791aebd5f648844803cc3504deb592,
         type: 3}
       propertyPath: m_ApplyRootMotion

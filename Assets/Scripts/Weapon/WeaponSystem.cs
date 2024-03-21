@@ -9,8 +9,10 @@ public class WeaponSystem : MonoBehaviour
 
     [Header("Shooting Data")]
     [SerializeField] string groundLayerName = "Ground";
+    [SerializeField] string enemyLayerName = "Enemy";
     [SerializeField] GameObject trailPrefab;
     [SerializeField] GameObject impactEffect;
+    [SerializeField] GameObject impactEffectEnemy;
     [SerializeField] float impactDestroyTime = 50f;
     [SerializeField] float trailTime = 0.15f;
     [SerializeField] float impactForce = 250f;
@@ -48,6 +50,10 @@ public class WeaponSystem : MonoBehaviour
             {
                 SpawnBulletImpact(impactEffect, hit.point, Quaternion.LookRotation(hit.normal), impactDestroyTime);
             }
+            else if (hit.collider.gameObject.layer.Equals(LayerMask.NameToLayer(enemyLayerName)))
+            {
+                SpawnBulletImpact(impactEffectEnemy, hit.point, Quaternion.LookRotation(hit.normal), impactDestroyTime);
+            }
             ShootBulletTrail(trailPrefab, trailStartPoint, hit.point, trailTime);
             if (hit.transform.TryGetComponent(out Rigidbody rigidbody))
             {
@@ -71,6 +77,10 @@ public class WeaponSystem : MonoBehaviour
             if (hit.collider.gameObject.layer.Equals(LayerMask.NameToLayer(groundLayerName)))
             {
                 SpawnBulletImpact(impactEffect, hit.point, Quaternion.LookRotation(hit.normal), impactDestroyTime);
+            }
+            else if (hit.collider.gameObject.layer.Equals(LayerMask.NameToLayer(enemyLayerName)))
+            {
+                SpawnBulletImpact(impactEffectEnemy, hit.point, Quaternion.LookRotation(hit.normal), impactDestroyTime);
             }
             ShootBulletTrail(trailPrefab, trailStartPoint, hit.point, trailTime);
             if (hit.transform.TryGetComponent(out Rigidbody rigidbody))
@@ -96,6 +106,10 @@ public class WeaponSystem : MonoBehaviour
             if (hitInfo.collider.gameObject.layer.Equals(LayerMask.NameToLayer(groundLayerName)))
             {
                 SpawnBulletImpact(impactEffect, hitInfo.point, Quaternion.LookRotation(hitInfo.normal), impactDestroyTime);
+            }
+            else if (hit.collider.gameObject.layer.Equals(LayerMask.NameToLayer(enemyLayerName)))
+            {
+                SpawnBulletImpact(impactEffectEnemy, hit.point, Quaternion.LookRotation(hit.normal), impactDestroyTime);
             }
             ShootBulletTrail(trailPrefab, trailStartPoint, hitInfo.point, trailTime);
             if (hitInfo.transform.TryGetComponent(out Rigidbody rigidbody))
