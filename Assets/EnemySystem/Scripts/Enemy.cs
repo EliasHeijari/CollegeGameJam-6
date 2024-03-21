@@ -31,8 +31,10 @@ public class Enemy : MonoBehaviour, IDamageable
     public void TakeDamage(int damage){
         health -= damage;
         if (health <= 0)
+        {
             health = 0;
             Die();
+        }
     }
 
     private void Die()

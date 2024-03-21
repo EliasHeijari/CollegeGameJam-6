@@ -9,6 +9,10 @@ public class WeaponHandling : MonoBehaviour
     [SerializeField] private Transform handTransform;
     [SerializeField] private float WeaponThrowForce = 300f;
     [SerializeField] private float ShotImpactForce = 200f;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip shootClip;
+    [SerializeField] private AudioClip reloadClip;
+
     public int pistolMags {get; set;} = 0;
     public int subMachineMags {get; set;} = 0;
     public event EventHandler OnShoot;
@@ -43,15 +47,11 @@ public class WeaponHandling : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0) && Time.time >= shootingCooldown && Weapon.magSize > 0 && !Weapon.isReloading){
             shootingCooldown = Time.time + 1f/Weapon.Data.fireRate;
             OnShoot?.Invoke(this, EventArgs.Empty);
-
+            AudioSource.PlayClipAtPoint(shootClip, transform.position);
             if (WeaponSystem.Instance.Shoot(Weapon.ShootingPoint.position, Weapon.ShootingPoint.right,
                 transform.position, Weapon.ShootingPoint.position, Weapon.Data.shootingDistance, ShotImpactForce, out RaycastHit hit))
                 {
-                    // TODO: Damage Logic Here, IDamageable.Damage
-                     if (hit.collider.TryGetComponent(out IDamageable damageable))
-                {
-                    damageable.TakeDamage(10);
-                }
+                    if (hit.collider.TryGetComponent(out IDamageable damageable)) damageable.TakeDamage(10);
                 }
             
         }
@@ -77,12 +77,16 @@ public class WeaponHandling : MonoBehaviour
             if (pistolMags > 0 && Weapon.magSize < Weapon.Data.maxMagSize){
             pistolMags -= 1;
             Weapon.Reload();
+                audioSource.clip = reloadClip;
+                audioSource.Play();
             }
         }
         else if (Weapon.Data.weaponType == WeaponData.WeaponType.SubMachine){
             if (subMachineMags > 0 && Weapon.magSize < Weapon.Data.maxMagSize){
             subMachineMags -= 1;
             Weapon.Reload();
+                audioSource.clip = reloadClip;
+                audioSource.Play();
             }
         }
     }
