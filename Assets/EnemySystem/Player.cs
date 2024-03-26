@@ -45,7 +45,7 @@ public class Player : MonoBehaviour, IDamageable
 
     private void Die()
     {
-        LoadCurrentSceneAfterTime(2f);
+        StartCoroutine(LoadCurrentSceneAfterTime(2f));
     }
 
     IEnumerator LoadCurrentSceneAfterTime(float time)
